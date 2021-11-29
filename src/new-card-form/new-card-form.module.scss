@@ -1,0 +1,61 @@
+@import 'vars';
+
+.new-card {
+  position: relative;
+  margin: 15px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: $new-card-form-bg-color;
+  border: 2px solid $new-card-form-bg-color;
+  padding: 5px;
+  color: $font-secondary-color;
+  width: 600px;
+
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  input,
+  textarea {
+    font-family: inherit;
+    margin: 5px 0;
+    width: 90%;
+  }
+
+  .input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid $primary-background-color;
+  }
+
+  textarea {
+    height: 60px;
+  }
+
+  .new-card_buttons {
+    display: flex;
+
+    .button {
+      min-width: 50px;
+    }
+  }
+
+  .new-card_choose-img {
+    position: absolute;
+  }
+
+  .error-descripton {
+    color: red;
+    font-size: 10px;
+    margin: 2px;
+  }
+  .error {
+    border: 1px solid red;
+    &::placeholder {
+      color: red;
+    }
+  }
+
+}

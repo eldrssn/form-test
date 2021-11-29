@@ -1,0 +1,19 @@
+@import '../../new-card-form/vars';
+
+.button {
+  display: block;
+  background-color: $button-primary-bg-color;
+  color: $font-primary-color;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  margin: 8px auto;
+
+  &:hover {
+    background-color: $button-hover-bg-color;
+  }
+
+  &:active {
+    background-color: $button-active-bg-color;
+  }
+}
